@@ -1,10 +1,10 @@
-import picone from "../media/pic1.jpg";
-import pictwo from "../media/pic2.jpeg";
-import picthree from "../media/pic3.jpeg";
+import picone from "../media/carousel1.jpg";
+import pictwo from "../media/carousel2.jpg";
+import picthree from "../media/carousel3.jpg";
 
 function Carousel(){
     return(
-        <div id="carouselExampleCaptions" class="carousel slide">
+        <div id="carouselExampleCaptions" class="carousel slide" style={{aspectRatio: '16/9'}}>
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>

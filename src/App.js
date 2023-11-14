@@ -5,10 +5,10 @@ import { useState } from 'react';
 // PAGES DIRECTORY
 import Home from './pages/Home';
 import ContactUs from './pages/ContactUs';
-import Shop from './pages/Shop';
+import Profile from './pages/Profile';
 import UserContext from './pages/Data';
 import Login from './pages/Login';
-import References from './pages/References';
+
 
 function App(){
 
@@ -21,9 +21,9 @@ function App(){
                         <Route path="samplereact/" element={<Home/>}/>
                         <Route path="/home" element={<Home/>}/>
                         <Route path="/login" element={<Login/>}/>
-                        <Route path="/shop" element={<Shop/>}/>
+                        <Route path="/profile" element={<Profile/>}/>
                         <Route path="/contact" element={<ContactUs/>}/>
-                        <Route path="/references" element={<References/>}/> 
+                         
                     </Routes>
                 </UserContext.Provider>
             </BrowserRouter> 
