@@ -8,6 +8,8 @@ import ContactUs from './pages/ContactUs';
 import Profile from './pages/Profile';
 import UserContext from './pages/Data';
 import Login from './pages/Login';
+import LoginDecision from './pages/LoginDecision';
+import S_Login from './student/S_Login';
 
 
 function App(){
@@ -18,11 +20,20 @@ function App(){
             <BrowserRouter>
                 <UserContext.Provider value={{user, setUser}}>
                     <Routes>
-                        <Route path="samplereact/" element={<Home/>}/>
+                        <Route path="/" element={<LoginDecision/>}/>
+
+                        {/* ADMIN */}
+
+                        <Route path="/login" element={<Login/>}/>
                         <Route path="/home" element={<Home/>}/>
                         <Route path="/login" element={<Login/>}/>
                         <Route path="/profile" element={<Profile/>}/>
                         <Route path="/contact" element={<ContactUs/>}/>
+
+                        {/* STUDENTS */}
+
+                        <Route path="/student/login" element={<S_Login/>}/>
+
                          
                     </Routes>
                 </UserContext.Provider>

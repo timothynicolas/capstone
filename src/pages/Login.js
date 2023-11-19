@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 import UserContext from "./Data";
 
 function Login(){
@@ -39,6 +40,10 @@ function Login(){
                 <input type="text" id="lname" value={lname} onChange={(e) => {setLname(e.target.value)}}/><br/>
                 <button type="button" onClick={submitForm}>Submit</button>
             </form>
+
+            <br/>
+
+            
         </div>
     )
 }
